@@ -1,5 +1,4 @@
 var capture;
-let ellipseColor;
 var myImage;
 
 function setup() {
@@ -11,6 +10,8 @@ function setup() {
 
   button = createButton('Click here to take a picture, then press mouse to draw.');
     button.position(windowWidth/3, 19);
+		button.style('height', '30px');
+button.style('width', '300x');
     button.mousePressed(changeBG);
 }
 
@@ -34,4 +35,3 @@ function changeBG() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
-s
